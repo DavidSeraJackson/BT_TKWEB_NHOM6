@@ -159,7 +159,9 @@ nav > div > a:hover {
   transform: translate(-50%, -50%);
   margin-top: 5vh;
 }
-
+.greating-btn {
+  text-decoration: none;
+}
 .cta {
   display: flex;
   align-items: center;
@@ -347,7 +349,6 @@ nav > div > a:hover {
 
 /* cuon chuot */
 .scroller {
-  position: fixed;
   bottom: 0;
   background-color: #fff;
   padding: 5px;
