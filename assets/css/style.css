@@ -301,6 +301,10 @@ nav > div > a:hover {
   object-fit: cover;
   object-position: 0 center;
 }
+.galery-wrapper .card img:hover {
+  scale: 110%;
+  transition: 0.5s ease;
+}
 .galery-wrapper .card h3 {
   padding: 10px 0;
   font-size: 25px;

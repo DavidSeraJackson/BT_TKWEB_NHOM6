@@ -1,4 +1,5 @@
 function Time() {
+    // get time
     var d = new Date();
     var hour = d.getHours();
     var minute = d.getMinutes();
@@ -25,10 +26,7 @@ function Time() {
             hour = hour - 12;
         }
     }
-    
 
-    // update hour,minute,second;
-    // if less than 10
     hour = update(hour);
     minute = update(minute);
     second = update(second);
@@ -36,7 +34,7 @@ function Time() {
     //day fomat
     var week = "";
     if(day==0) {
-        week = "Monday";
+        week = "Sunday";
     }
     if(day==1) {
         week = "Tuesday";
@@ -54,10 +52,11 @@ function Time() {
         week = "Saturday";
     }
     if(day==6) {
-        week = "Sunday";
+        week = "Monday";
     }
-
+    console.log(d.getMonth());
     // add time element
+    month++;
     document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period + "\n" + week + " " + date + " " + month + " " + year;
     // set timer to 1 sec 1000ms 
     setTimeout(Time,1000);
@@ -71,17 +70,6 @@ function update(t) {
     }
 }
 Time();
-/* greating logic */
-setTimeout(() => {
-    var x = document.getElementById("greating");
-    x.style.opacity = "1";
-}, 1000)
-
-setTimeout(() => {
-    var x = document.getElementById("greating");
-    x.style.opacity = "0";
-}, 8000)
-// x.style.opacity = "0";s
 
 
 

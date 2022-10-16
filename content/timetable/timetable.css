@@ -102,24 +102,30 @@ nav > div > a:hover {
 }
 /* *************HẾT HEADER**************** */
 
-
-/* table content */
-
-.table {
-  margin-top: 90px;
-}
-
-
-
-
 /* ************************************************ */
 /* NOI DUNG TRANG */
 /* ************************************************ */
 
 
+thead {
+  background-color: aquamarine;
+}
 
+table,td,th,tr,thead,tbody {
+  text-align: center;
+}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
 
+}
+table > thead > tr > th {
+  color: red;
+}
+td {
+  width: calc(100%/9);
 
+}
 
 
 /* cuon chuot */
